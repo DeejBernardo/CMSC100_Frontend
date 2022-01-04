@@ -11,7 +11,6 @@ export default function Home() {
         <div>
             <Topbar/>
         <div className="homeContainer">
-        <Sidebar/>
         <Feed/>
             </div>    
         </div>

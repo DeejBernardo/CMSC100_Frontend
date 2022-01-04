@@ -1,10 +1,10 @@
 import React from 'react'
-import './profile.css'
+import './about.css'
 
-export default function profile() {
+export default function About() {
     return (
         <div>
-            
+            z
         </div>
     )
 }
