@@ -1,40 +1,42 @@
-import React from 'react'
-import './sidebar.css'
-import {Home, Person} from '@material-ui/icons'
+import React, { useState } from 'react';
+import {QuestionAnswer} from '@material-ui/icons'
+import { Link } from 'react-router-dom';
+import { SidebarData } from './SidebarData';
+import './sidebar.css';
 
-export default function Sidebar() {
-    return (
-        <div className="sidebar">
-           <div className="sidebarWrapper">
-           <div className="sidebarData">
-                <ul className="sidebarOptions">
-                    <li className="sidebarOption">
-                        <div className="sidebarIcon"><Home/></div>
-                        <div className="sidebarName">Home</div>
-                    </li>
-                    <li className="sidebarOption">
-                        <div className="sidebarIcon"><Person/></div>
-                        <div className="sidebarName">Profile</div>
-                    </li>
-                    <li className="sidebarOption">
-                        <div className="sidebarIcon"><Person/></div>
-                        <div className="sidebarName">Profile</div>
-                    </li>
-                    <li className="sidebarOption">
-                        <div className="sidebarIcon"><Person/></div>
-                        <div className="sidebarName">Profile</div>
-                    </li>
-                    <li className="sidebarOption">
-                        <div className="sidebarIcon"><Person/></div>
-                        <div className="sidebarName">Profile</div>
-                    </li>
-                    <li className="sidebarOption">
-                        <div className="sidebarIcon"><Person/></div>
-                        <div className="sidebarName">Profile</div>
-                    </li>
-                </ul>
-            </div>
-           </div>
+function Navbar() {
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = () => setSidebar(!sidebar);
+
+  return (
+    <>
+        <div className='navbar'>
+          <Link to='#' className='menu-bars'>
+            <QuestionAnswer onClick={showSidebar} />
+          </Link>
         </div>
-    )
+        <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+          <ul className='nav-menu-items' onClick={showSidebar}>
+            <li className='navbar-toggle'>
+              <Link to='#' className='menu-bars'>
+                <QuestionAnswer />
+              </Link>
+            </li>
+            {SidebarData.map((item, index) => {
+              return (
+                <li key={index} className={item.cName}>
+                  <Link to={item.path}>
+                    {item.icon}
+                    <span>{item.title}</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+    </>
+  );
 }
+
+export default Navbar;

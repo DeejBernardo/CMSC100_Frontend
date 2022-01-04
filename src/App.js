@@ -1,11 +1,22 @@
+import React from 'react';
+import './App.css';
+import Topbar from './components/topbar/Topbar';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
-import {Person} from '@material-ui/icons';
+import Profile from './pages/profile/Profile';
+
 
 function App() {
   return (
-    <div>
-      <Home/>
-    </div>
+    <>
+    <Router>
+      <Topbar />
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/profile' component={Profile} />
+      </Switch>
+    </Router>
+  </>
   );
 }
 
