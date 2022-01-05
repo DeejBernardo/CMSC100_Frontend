@@ -1,0 +1,110 @@
+.post {
+
+    width: 100%;
+    height:initial;
+    border: 2px solid #a5a5a5;
+    margin-top: 3%;
+}
+
+.postWrapper {
+
+    padding: 5px;
+
+}
+
+.postTop {
+
+    height: 100%;
+    display: flex;
+    margin-bottom: 2%;
+
+    }
+
+.postContent {
+    margin-bottom: 2%;
+    font-size: 150%;
+}
+
+.postStars {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.starButton {
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.numberOfStars {
+    font-size: 120%;
+    margin-left: 1%;
+}
+
+.starButton:hover {
+    color: rgb(241, 179, 64);
+}
+
+.profilePicture {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+
+}
+
+.postBottom {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    background-color: rgb(29, 29, 29);
+    margin: 0;
+
+}
+.commentButton {
+
+    display: flex;
+    border-radius: 20px;
+    padding: 5px
+
+}
+.commentButton:hover {
+
+    display: flex;
+    background-color: rgb(58, 58, 58);
+
+}
+
+.addComment {
+
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-left: auto; 
+    margin-right: 10px;;    
+
+}
+
+.commentText {
+
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+
+}
+
+.commentBar {
+
+    height: 70%;
+    width: 950px;
+    border-color: white;
+    border-radius: 100px;
+    display: flex;
+    margin-right: 3%;
+
+}

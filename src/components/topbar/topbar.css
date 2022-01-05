@@ -79,3 +79,13 @@
     width: 30px;
     height: 30px;
 }
+
+.logoutButton {
+
+    display: flex;
+    color: white;
+}
+
+.logoutButton:hover {
+    color: wheat;
+}
