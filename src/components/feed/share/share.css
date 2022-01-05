@@ -1,10 +1,13 @@
 .share {
 
-    width: 1000px;
+    width: 750px;
     height: 200px;
-    -webkit-box-shadow: 13px 8px 18px -10px rgba(0,0,0,0.77); 
-    box-shadow: 13px 8px 18px -10px rgba(0,0,0,0.77);
-    margin-right: 50px;
+    border: 2px solid #a1a1a1;
+    margin-top: 20px;
+    -webkit-box-shadow: 5px 5px 8px 3px rgba(0,0,0,0.29); 
+    box-shadow: 5px 5px 8px 3px rgba(0,0,0,0.29);
+    position: absolute;
+    left: 30%;
 }
 
 .shareWrapper {
@@ -12,6 +15,12 @@
     padding: 10px;
 
 }
+
+.shareTop {
+
+    height: 100px;
+
+    }
 
 .profilePicture {
 
@@ -44,11 +53,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 20px;
 
 }
-.shareOptions {
+.shareOption {
 
     display: flex;
+    
 
 }
 

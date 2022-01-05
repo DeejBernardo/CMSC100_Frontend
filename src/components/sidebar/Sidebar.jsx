@@ -3,17 +3,23 @@ import './sidebar.css'
 import {sidebarData} from './sidebarData'
 import {MenuOpen, Close} from '@material-ui/icons'
 import {Link} from 'react-router-dom';
+import Topbar from '../../components/topbar/Topbar'
 
 export default function Sidebar() {
-  const {sidebar, setSidebar} = useState(false);
-  const showSidebar = () => setSidebar(!sidebar);
+
+
+  const [sidebar, setSidebar] = useState(false);
+  function showSidebar() {
+    return setSidebar(!sidebar);
+  }
 
     return (
         <>
-        <div className="sidebarz">
+        <div className="topbarContent">
           <Link to='#' className="menuBars"> 
           <MenuOpen onClick={showSidebar}/>
           </Link>
+          <Topbar/>
         </div>
           <nav className={sidebar ? 'navMenuActive' : 'navMenu'}>
             <ul className="navMenuItems">

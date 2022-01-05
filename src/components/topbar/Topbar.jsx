@@ -8,7 +8,7 @@ export default function Topbar() {
 
         <div className="topbarContainer">
             <div className="topbarLeft">
-            <span className="topbarLogo">FB</span>
+            <span className="topbarLogo">Social Media</span>
             </div>
 
             <div className="topbarCenter">
