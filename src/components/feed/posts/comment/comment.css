@@ -1,0 +1,26 @@
+.comment {
+    width: 100%;
+    height:initial;
+    border: 2px solid #a5a5a5;
+    background-color: rgb(235, 235, 235);
+}
+
+.commentWrapper {
+    padding: 5px;
+}
+
+.commentContent {
+    margin-bottom: 2%;
+    font-size: 100%;
+}
+
+.commentGroup {
+
+    height: 100%;
+    display: flex;
+
+}
+
+.userName {
+    font-weight: bold;
+}

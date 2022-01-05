@@ -1,6 +1,7 @@
 import React from 'react'
 import './post.css'
 import { Star } from '@material-ui/icons'
+import Comment from './comment/Comment.jsx'
 
 export default function Post() {
     return (
@@ -19,7 +20,7 @@ export default function Post() {
                     </div>
                 </div>
                 <div className="postContent">
-                    hehe potanginang buhay
+                    hehe ayaw q n mabuhai
                 </div>
                 <div className="postStars">
                     <div className="starButton">
@@ -30,6 +31,9 @@ export default function Post() {
                     </div>
                 </div>
                 <hr className="postHr" />
+                <Comment/>
+                <Comment/>
+                <Comment/>
                 <div className="postBottom">
                     <div className="addComment">
                  <input placeholder="Add comment..." className="commentBar" /> 
