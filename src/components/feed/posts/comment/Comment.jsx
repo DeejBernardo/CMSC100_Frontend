@@ -9,10 +9,10 @@ export default function Comment() {
                 <img src="/assets/1.png" height="5px" width="5px" className="profilePicture" />
                     <div className="commentContent">
                         <div className="userName">
-                            Javs Salvador
+                            Christine Dacera
                         </div>
                         <div className="mainComment">
-                            HAHAHAHAHHAHAHA SAME PARE
+                            BRODIE
                         </div>
                     </div>
                 </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import './feed.css'
 import Share from './share/Share'
 import Post from './posts/Post'
+import { Posts } from '../../DummyData'
 
 export default function Feed() {
     return (
@@ -11,9 +12,9 @@ export default function Feed() {
     <div className="content">
         <div className="feedWrapper">
                 <Share/>
-                <Post/>
-                <Post/>
-                <Post/>
+                {Posts.map((p) => (
+                    <Post key={p.id} post= {p}/>
+                ))}
             </div>
         </div>
             <div className="margin">

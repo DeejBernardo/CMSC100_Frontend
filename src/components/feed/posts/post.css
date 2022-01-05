@@ -36,6 +36,12 @@
     cursor: pointer;
 }
 
+.starButtonActive {
+    margin-left: 2%;
+    cursor: pointer;
+    color: rgb(253, 172, 42);
+}
+
 .numberOfStars {
     font-size: 120%;
     margin-left: 1%;
@@ -44,6 +50,8 @@
 .starButton:hover {
     color: rgb(241, 179, 64);
 }
+
+
 
 .profilePicture {
 
