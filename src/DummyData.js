@@ -1,23 +1,40 @@
 export const Users = [
-    {
-      id:1,
-      username: "Javs Salvador",
-    },
-    {
-        id:2,
-        username: "Pedro Penduko",
+     {
+        id:1,
+        firstName: "Javs",
+        lastName: "Salvador",
+        username: "javs23",
+        hobbies: "Bebetime, bestie time"
+
+     },
+     {
+      id:2,
+      firstName: "Christine",
+      lastName: "Dacera",
+      username: "daceruhhh",
+      hobbies: "umiyak malala, kumain madami"
+        
       },
       {
         id:3,
-        username: "Christine Dacera",
+        firstName: "Super",
+        lastName: "Idol",
+        username: "DarrenTwinnie",
+        hobbies: "live love laugh"
       },
       {
         id:4,
-        username: "Uvuvvwevwe Onyentenyevwe Osas",
+        firstName: "Gwyneth",
+        lastName: "Chua",
+        username: "BaddieNg2021",
+        hobbies: "magparty"
       },
       {
         id:5,
-        username: "Gwyneth Chua",
+        firstName: "JK",
+        lastName: "Labajo",
+        username: "DarrenEnemy",
+        hobbies: "landiin si maureen, tumambay sa ilalim ng puting ilaw"
       },
   ];
   
@@ -26,7 +43,7 @@ export const Users = [
       id: 1,
       desc: "party party kahet may kobid! #medyobadgirl",
       date: "5 mins ago",
-      userId: 5,
+      userId: 4,
       like: 0,
     },
     {
@@ -48,14 +65,14 @@ export const Users = [
 export const Comments = [
     {
         id: 1,
-        comment: "PAREHHHH",
+        comment: "Grabe ka lods badboy",
         userId: 2,
         postId: 1
     },
     {
         id: 2,
-        comment: "PAREHHHHH",
-        userId: 4,
+        comment: "taena kulong ka ngaun wAHAHAHHAHAHAH",
+        userId: 5,
         postId: 1
     },
     {
@@ -66,14 +83,14 @@ export const Comments = [
     },
     {
         id: 4,
-        comment: "PAREHHHHH",
+        comment: "PARTY TAYO PAREHHHHH",
         userId: 4,
         postId: 2
     },
     {
       id: 5,
-      comment: "PARTY TAYO PAREHHHH",
-      userId: 5,
+      comment: "Super Idol的笑容 都没你的甜 八月正午的阳光 都没你耀眼 热爱 105 °C的你 滴滴清纯的蒸馏水 Super Idol",
+      userId: 3,
       postId: 2
   }
 

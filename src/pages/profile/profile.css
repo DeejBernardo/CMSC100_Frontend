@@ -1,0 +1,45 @@
+.profile{
+    display: flex;
+}
+
+.profileWrapper {
+    padding: 0px;
+    margin-left: 300px;
+    margin-right: 300px;
+
+}
+
+.mainProfile{
+    flex: 4
+}
+
+.coverPhoto {
+    position: relative;
+    object-fit: cover;
+    border: black;
+}
+
+.profilePic {
+    position: relative;
+    margin-top: -10%;
+    left: 70%;
+    height: 200px;
+    width: 200px;
+
+}
+
+.profileInfo {
+    position: absolute;
+    margin-top: -200px;
+    font-size: 150%;
+}
+
+.profileInfoName {
+    font-size: 300%;
+    margin-bottom: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.postsByUser {
+    margin-top: 10%;
+}

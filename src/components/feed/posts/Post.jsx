@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
 import './post.css'
 import { Star } from '@material-ui/icons'
-import Comment from './comment/Comment.jsx'
-import { Users } from '../../../DummyData'
-import { Comments } from '../../../DummyData'
+import Comment from './comment/Comment'
+import { Users, Comments } from '../../../DummyData'
 
 export default function Post({post}) {
+
+const postComments = Comments.filter(p => p.postId === post.id);
 
 const [like, setLike] = useState(post.like)
 const [isLiked, setIsLiked] = useState(false)
@@ -23,7 +24,7 @@ const likeHandler = () => {
                     <img src="/assets/1.png" height="20px" width="20px" className="profilePicture" />
                     <div className="postInfo">
                         <div className="userName">
-                            {Users.filter((u)=>u.id=== post.userId)[0].username}
+                            {Users.filter((u)=>u.id === post.userId)[0].firstName + " " + Users.filter((u)=>u.id === post.userId)[0].lastName}
                         </div>
                         <div className="time">
                             {post.date}
@@ -42,7 +43,11 @@ const likeHandler = () => {
                     </div>
                 </div>
                 <hr className="postHr" />
-                <Comment/>
+                {postComments.map(
+                    c => (
+                        <Comment key={c.id} comment={c}/>
+                    )
+                )}
                 <div className="postBottom">
                     <div className="addComment">
                  <input placeholder="Add comment..." className="commentBar" /> 
