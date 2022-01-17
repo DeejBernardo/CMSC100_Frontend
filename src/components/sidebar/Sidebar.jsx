@@ -4,8 +4,9 @@ import {sidebarData} from './sidebarData'
 import {MenuOpen, Close} from '@material-ui/icons'
 import {Link} from 'react-router-dom';
 import Topbar from '../../components/topbar/Topbar'
+import { Users } from '../../DummyData';
 
-export default function Sidebar() {
+export default function Sidebar({currentUserId}) {
 
 
   const [sidebar, setSidebar] = useState(false);
@@ -19,7 +20,7 @@ export default function Sidebar() {
           <Link to='#' className="menuBars"> 
           <MenuOpen onClick={showSidebar}/>
           </Link>
-          <Topbar/>
+          <Topbar currentUserId={currentUserId}/>
         </div>
           <nav className={sidebar ? 'navMenuActive' : 'navMenu'}>
             <ul className="navMenuItems">
@@ -31,7 +32,7 @@ export default function Sidebar() {
             {sidebarData.map((item,index) => {
               return (
                 <li key={index} className={item.cName}>
-                  <Link to={item.path}>
+                  <Link to={item.path} component={Users}>
                     {item.icon}
                     <span>{item.title}</span>
                   </Link>

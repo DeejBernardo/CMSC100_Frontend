@@ -5,12 +5,12 @@ export const sidebarData = [
   {
     title: 'Home',
     path: '/',
-    icon: <Home/>,
+    icon: <Home />,
     cName: 'navText'
   },
   {
     title: 'Profile',
-    path: '/profile',
+    path: '/profile/:username',
     icon: <Person />,
     cName: 'navText'
   },

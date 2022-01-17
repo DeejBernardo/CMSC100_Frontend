@@ -1,13 +1,14 @@
 import React from 'react'
 import './profile.css'
 import Post from '../../components/feed/posts/Post'
-import { Posts } from '../../DummyData'
-import { Users } from '../../DummyData'
+import { Posts, Users } from '../../DummyData'
+import Friend from './Friend/Friend'
 
-export default function profile() {
+export default function profile({currentUserId}) {
 
-    const currentUserId = 1;
     const postsByUser = Posts.filter((a) => (currentUserId === a.userId));
+    const currentUserProfile = Users.filter((a) => currentUserId === a.id);
+    const userFriends = Users.filter((b) => (currentUserProfile[0].friendsId.includes(b.id)))
 
     return (
         <div className='profile'>
@@ -22,6 +23,13 @@ export default function profile() {
                 </div>
                 <div className="postsByUser">
                 {postsByUser.map((p) => (<Post key={p.id} post={p}/>))}
+                </div>
+                <div className="friendList">
+                    <br></br>
+                    FRIENDS:
+                    {userFriends.map((p) => (
+                        <Friend key={p.id} friend={p}></Friend>
+                    ))}
                 </div>
                 </div>
         </div>

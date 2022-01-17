@@ -15,7 +15,7 @@
 
 .coverPhoto {
     position: relative;
-    object-fit: cover;
+    width: 100%;
     border: black;
 }
 

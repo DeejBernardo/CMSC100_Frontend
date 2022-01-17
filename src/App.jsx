@@ -5,13 +5,16 @@ import Sidebar from './components/sidebar/Sidebar';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
+
+  const currentUserId = 4;
+
   return (
     <div>
       <Router>
-        <Sidebar/>
+        <Sidebar currentUserId={currentUserId}/>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/profile' element={<Profile />} />
+          <Route path='/profile/:username' element={<Profile currentUserId={currentUserId}/>} />
           <Route path='/about' element={<About/>} />
         </Routes>
       </Router>

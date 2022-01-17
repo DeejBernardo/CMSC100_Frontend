@@ -4,7 +4,8 @@ export const Users = [
         firstName: "Javs",
         lastName: "Salvador",
         username: "javs23",
-        hobbies: "Bebetime, bestie time"
+        hobbies: "Bebetime, bestie time",
+        friendsId: [2, 3, 4, 5],
 
      },
      {
@@ -12,7 +13,8 @@ export const Users = [
       firstName: "Christine",
       lastName: "Dacera",
       username: "daceruhhh",
-      hobbies: "umiyak malala, kumain madami"
+      hobbies: "umiyak malala, kumain madami",
+      friendsId: [1, 3, 4]
         
       },
       {
@@ -20,21 +22,24 @@ export const Users = [
         firstName: "Super",
         lastName: "Idol",
         username: "DarrenTwinnie",
-        hobbies: "live love laugh"
+        hobbies: "live love laugh",
+        friendsId: [1, 2, 4, 5],
       },
       {
         id:4,
         firstName: "Gwyneth",
         lastName: "Chua",
         username: "BaddieNg2021",
-        hobbies: "magparty"
+        hobbies: "magparty",
+        friendsId: [1, 2, 3, 5]
       },
       {
         id:5,
         firstName: "JK",
         lastName: "Labajo",
         username: "DarrenEnemy",
-        hobbies: "landiin si maureen, tumambay sa ilalim ng puting ilaw"
+        hobbies: "landiin si maureen, tumambay sa ilalim ng puting ilaw",
+        friendsId: [1, 2, 4]
       },
   ];
   
@@ -44,21 +49,23 @@ export const Users = [
       desc: "party party kahet may kobid! #medyobadgirl",
       date: "5 mins ago",
       userId: 4,
-      like: 0,
+      like: 0
     },
     {
         id: 2,
         desc: "gagi parehhhh",
         date: "10 mins ago",
         userId: 1,
-        like: 69
+        like: 69,
+        likedBy: []
       },
       {
         id: 3,
         desc: "Naniniwala na ako sa forever, simula nung nakilala kitaaaaaaaaaa <333 #b0ss_mHad4m.q23",
         date: "1 hour ago",
         userId: 4,
-        like: 3
+        like: 3,
+        likedBy: []
       },
   ];
   
