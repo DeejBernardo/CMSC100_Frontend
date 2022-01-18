@@ -3,6 +3,7 @@ import './profile.css'
 import Post from '../../components/feed/posts/Post'
 import { Posts, Users } from '../../DummyData'
 import Friend from './Friend/Friend'
+import {Link} from 'react-router-dom';
 
 export default function profile({currentUserId}) {
 
@@ -28,10 +29,11 @@ export default function profile({currentUserId}) {
                     <br></br>
                     FRIENDS:
                     {userFriends.map((p) => (
-                        <Friend key={p.id} friend={p}></Friend>
+                         <Friend key={p.id} friend={p}></Friend>
                     ))}
                 </div>
                 </div>
         </div>
     )
 }
+

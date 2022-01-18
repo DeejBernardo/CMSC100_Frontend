@@ -1,7 +1,15 @@
 import React from 'react';
-import {Home, Person, Help} from '@material-ui/icons'
+import {Home, Person, Help, Apple} from '@material-ui/icons'
+import { Users } from '../../DummyData';
+import {getCurrentId} from '../../App.jsx';
+
+
+const currentUserId = getCurrentId()
+const currentUser = Users.filter((a) => a.id === currentUserId)
+const currentUsername = currentUser[0].username
 
 export const sidebarData = [
+
   {
     title: 'Home',
     path: '/',
@@ -10,7 +18,7 @@ export const sidebarData = [
   },
   {
     title: 'Profile',
-    path: '/profile/:username',
+    path: '/profile/' + currentUsername,
     icon: <Person />,
     cName: 'navText'
   },

@@ -3,6 +3,7 @@ import './post.css'
 import { Star } from '@material-ui/icons'
 import Comment from './comment/Comment'
 import { Users, Comments } from '../../../DummyData'
+import {Link} from 'react-router-dom';
 
 export default function Post({post}) {
 
@@ -23,9 +24,11 @@ const likeHandler = () => {
                 <div className="postTop">
                     <img src="/assets/1.png" height="20px" width="20px" className="profilePicture" />
                     <div className="postInfo">
+                        <Link to={'/profile/' + Users.filter((u)=>u.id === post.userId)[0].username}>
                         <div className="userName">
                             {Users.filter((u)=>u.id === post.userId)[0].firstName + " " + Users.filter((u)=>u.id === post.userId)[0].lastName}
                         </div>
+                        </Link>
                         <div className="time">
                             {post.date}
                         </div>
