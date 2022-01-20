@@ -1,7 +1,7 @@
 import React from 'react';
 import {Home, Person, Help, Apple} from '@material-ui/icons'
 import { Users } from '../../DummyData';
-import {getCurrentId} from '../../App.jsx';
+import {getCurrentId} from '../../App.js';
 
 
 const currentUserId = getCurrentId()

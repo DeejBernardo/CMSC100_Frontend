@@ -5,7 +5,7 @@ import {ExitToApp} from '@material-ui/icons'
 import { Users } from '../../DummyData';
 
 export default function Topbar({currentUserId}) {
-
+    
     return (
 
         <div className="topbarContainer">
